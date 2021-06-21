@@ -1,0 +1,80 @@
+DEF_CMD (hlt , {}, {})
+
+DEF_CMD (push, {
+    
+    ReadParams (&buffer, machineCode, &byte);
+
+}, {})
+
+DEF_CMD (pop , {
+
+    ReadParams (&buffer, machineCode, &byte);
+
+}, {})
+
+DEF_CMD (in  , {}, {})
+DEF_CMD (out , {}, {})
+
+DEF_CMD (add , {}, {})
+DEF_CMD (sub , {}, {})
+DEF_CMD (mul , {}, {})
+DEF_CMD (sep , {}, {})
+
+DEF_CMD (sqrt, {}, {})
+
+DEF_CMD (sin , {}, {})
+DEF_CMD (cos , {}, {})
+
+DEF_CMD (jmp , {
+
+    ImplemJmp (&buffer, machineCode, &byte, labelTable, numLabels);
+
+}, {})
+
+DEF_CMD (ja , {
+
+    ImplemJmp (&buffer, machineCode, &byte, labelTable, numLabels);
+
+}, {})
+
+DEF_CMD (jb , {
+
+    ImplemJmp (&buffer, machineCode, &byte, labelTable, numLabels);
+
+}, {})
+
+DEF_CMD (jae , {
+
+    ImplemJmp (&buffer, machineCode, &byte, labelTable, numLabels);
+
+}, {})
+
+DEF_CMD (jbe , {
+
+    ImplemJmp (&buffer, machineCode, &byte, labelTable, numLabels);
+
+}, {})
+
+DEF_CMD (je , {
+
+    ImplemJmp (&buffer, machineCode, &byte, labelTable, numLabels);
+
+}, {})
+
+DEF_CMD (jne , {
+
+    ImplemJmp (&buffer, machineCode, &byte, labelTable, numLabels);
+
+}, {})
+
+DEF_CMD (call , {
+
+    ImplemJmp (&buffer, machineCode, &byte, labelTable, numLabels);
+
+}, {})
+
+DEF_CMD (ret , {
+
+    ImplemJmp (&buffer, machineCode, &byte, labelTable, numLabels);
+
+}, {})

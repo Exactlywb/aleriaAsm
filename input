@@ -1,0 +1,9 @@
+:main
+    push    0
+    pop     rax
+
+    push    0
+    push    rax
+    mul
+
+    hlt
